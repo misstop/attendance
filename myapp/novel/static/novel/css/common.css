@@ -125,7 +125,7 @@
 
 .sign-btn a {
     display: inline-block;
-    width:145px;
+    width:125px;
     padding: 10px 0;
     border-radius: 30px;
     text-align: center;
@@ -134,7 +134,7 @@
 .sign-btn a.signin,
 .sign-btn a.signout {
     background-color: #0297d6;
-    margin:0 11px;
+    margin:0 5px;
 }
 
 .sign-btn a.signinyet,
