@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>常用</title>
+    {% load static %}
+    <link href="{% static 'novel/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/novel/css/header.css' %}">
+    <script type="text/javascript" src="{% static 'novel/ckeditor/ckeditor.js' %}"></script>
+    <style>
+        .box{
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-communicate">
+        <h2>沟通</h2>
+    </div>
+    <div class="box">
+    <h4>畅所欲言</h4>
+    <form method="get" action="/novel/index/communicate/search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="输入你想要查看的帖子" name="q">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+        {% if article_list %}
+        {% for a in article_list %}
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">{{ a.title }}</h4>
+            {% autoescape off %}
+            <h5 class="list-group-item-text">{{ a.content }}</h5>
+            <h6 style="text-align: right">{{ a.created_at }}</h6>
+            {% endautoescape %}
+        </a>
+        {% endfor %}
+        {% endif %}
+        {% if error_msg %}
+        {{ error_msg }}
+        {% endif %}
+    </form>
+    <br>
+    <br>
+    <h4>我要发帖</h4>
+    <form action="/novel/index/communicate/postMessage" method="post">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">title</span>
+            <input type="text" class="form-control" placeholder="输入标题" aria-describedby="basic-addon1" name="title">
+        </div>
+        <textarea name="question"></textarea>
+        <script type="text/javascript">CKEDITOR.replace('question');</script>
+        <input type="submit" value="发表帖子"/>
+    </form>
+    <br>
+    {% if article %}
+        {% for art in article %}
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">{{ art.title }}</h4>
+            {% autoescape off %}
+            <h5 class="list-group-item-text">{{ art.content }}</h5>
+            <h6 style="text-align: right">{{ art.created_at }}</h6>
+            {% endautoescape %}
+        </a>
+        {% endfor %}
+    {% endif %}
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="{% static 'novel/jquery/jquery-3.3.1.min.js' %}"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="{% static 'novel/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

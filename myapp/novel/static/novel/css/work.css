@@ -1,0 +1,131 @@
+.work-func {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.work-func h2 {
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.work-func .func-list {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 0 5px;
+}
+
+.func-list table.func-ta {
+    width: 100%;
+}
+
+.func-list table.func-ta td {
+    border: 1px solid #f7f7f7;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.func-ta td a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #666;
+    padding: 55px 0 15px;
+}
+
+.func-ta td a i {
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.func-ta td.check a i {
+    background-position: -37px -10px;
+}
+
+.func-ta td.check-stat a i {
+    background-position: -40px -40px;
+}
+
+.func-ta td.leave a i {
+    background-position: -40px -70px;
+}
+
+.func-ta td.check-ch a i {
+    background-position: -40px -100px;
+}
+
+.func-ta td.work a i {
+    background-position: -90px -10px;
+}
+
+.func-ta td.overtime a i {
+    background-position: -90px -40px;
+}
+
+.func-ta td.business a i {
+    background-position: -90px -70px;
+    left: 27px;
+}
+
+.func-ta td.correct a i {
+    background-position: -173px -40px;
+    left: 27px;
+}
+
+.func-ta td.supexam a i {
+    background-position: -173px -70px;
+    left: 27px;
+}
+
+.func-ta td.leaveapp a i {
+    background-position: -132px -70px;
+    left: 27px;
+}
+
+.func-ta td.overtimeapp a i {
+    background-position: -30px -100px;
+    left: 27px;
+}
+
+.func-ta td.businesstrav a i {
+    background-position: -180px -10px;
+    left: 27px;
+}
+
+.func-ta td.sup a i {
+    background-position: -173px -100px;
+    left: 27px;
+}
+
+.func-ta td.supreplace a i {
+    background-position: -222px -10px;
+    left: 27px;
+}
+
+.func-ta td.signin a i {
+    background-position: -222px -40px;
+    left: 27px;
+}
+
+.func-ta td.signout a i {
+    background-position: -222px -70px;
+    left: 27px;
+}
+
+.func-ta td.punch a i {
+    background-position: -222px -100px;
+    left: 27px;
+}

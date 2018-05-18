@@ -1,0 +1,108 @@
+﻿.layout {
+    overflow: hidden;
+    position: relative;
+}
+
+.layout .header {
+    width: 100%;
+    background-color: #2f78cc;
+}
+
+.layout .header h2 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 10px;
+    display: table-cell;
+}
+
+.layout .header h2 i {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat -140px -30px;
+    margin-right: 10px;
+    vertical-align: sub;
+}
+
+.layout #iframe {
+    width: 100%;
+    height: 620px;
+}
+
+
+/* 按钮切换 */
+
+.layout .home-section {
+    padding-top: 10px;
+}
+
+.layout .hide {
+    display: none;
+}
+
+.layout .footer-button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.layout .footer-button ul {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.footer-button ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-button ul li a {
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    padding: 25px 0 5px;
+    position: relative;
+}
+
+.footer-button ul li a i {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+}
+
+.footer-button ul li.common a i {
+    background-position: -10px -10px;
+}
+
+.footer-button ul li.work a i {
+    background-position: -10px -30px;
+}
+
+.footer-button ul li.communicate a i {
+    background-position: -9px -50px;
+}
+
+.footer-button ul li.mine a i {
+    background-position: -9px -70px;
+}
+
+.footer-button ul li.active a {
+    color: #2f78cc;
+    text-decoration: none;
+}
+
+.footer-button ul li.active a i {
+    background-image: url(../images/icon_01.png);
+}

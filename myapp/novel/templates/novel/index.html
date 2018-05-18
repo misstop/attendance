@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>首页</title>
+     {% load static %}
+    <!-- Bootstrap -->
+    <link href="{% static 'novel/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/novel/css/body.css' %}">
+    <link rel="stylesheet" href="{% static '/novel/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/novel/css/index.css' %}">
+</head>
+
+<body>
+    <div class="layout">
+        <iframe src="common.html" scrolling="yes" frameborder="0" id="iframe"></iframe>
+        <div class="home-section footer footer-button">
+            <ul id="btn">
+                <li class="col-xs-3 common active" id="common"><a href="javascript:;"><i></i>常用</a></li>
+                <li class="col-xs-3 work" id="work"><a href="javascript:;"><i></i>工作</a></li>
+                <li class="col-xs-3 communicate" id="communicate"><a href="javascript:;"><i></i>沟通</a></li>
+                <li class="col-xs-3 mine" id="mine"><a href="javascript:;"><i></i>我的</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="{% static 'novel/jquery/jquery-3.3.1.min.js' %}"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="{% static 'novel/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script>
+        $('#btn li').bind('click', function() {
+            $(this).addClass('active').siblings().removeClass('active');
+            var s = $(this).attr("id");
+            $('#iframe').attr("src", s+".html");
+        });
+    </script>
+
+</body>
+
+</html>

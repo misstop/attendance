@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    background-color: #2f78cc;
+}
+
+.header h2 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 10px;
+    display: table-cell;
+}
+
+.header h2 i {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat -140px -30px;
+    margin-right: 10px;
+    vertical-align: sub;
+}
+
+.header-work,
+.header-communicate,
+.header-mine {
+    width: 100%;
+    background-color: #2f78cc;
+    text-align: center;
+}
+
+.header-work h2,
+.header-communicate h2,
+.header-mine h2 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 10px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>常用</title>
+    {% load static %}
+    <link href="{% static 'novel/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/novel/css/header.css' %}">
+    <style>
+        .box{
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-mine">
+        <h2>统计</h2>
+    </div>
+    <div class="box">
+    <h4>员工本月考勤记录</h4>
+    <form method="get" action="/novel/index/stat/search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="输入查看的员工姓名" name="q">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+    </form>
+    <br>
+    <br>
+    <table class="table table-hover">
+    <thead>
+        <tr>
+            <th class="span4 sortable">
+                                                     姓名
+            </th>
+            <th class="span3 sortable">
+                <span class="line"></span>性别
+            </th>
+              <th class="span3 sortable">
+                <span class="line"></span>工号
+            </th>
+            <th class="span2 sortable">
+                <span class="line"></span>签到
+            </th>
+             <th class="span2 sortable">
+                <span class="line"></span>加班
+            </th>
+             <th class="span2 sortable">
+                <span class="line"></span>请假
+            </th>
+            <th class="span2 sortable">
+                <span class="line"></span>外出
+            </th>
+        </tr>
+    </thead>
+    <!-- row -->
+    {% for l in ls %}
+    <tr class="first" style="text-align: center">
+
+        <td>
+            {{ l.name }}
+        </td>
+        <td>
+            {{ l.sex }}
+        </td>
+        <td>
+            {{ l.empID }}
+        </td>
+        <td >
+            {{ l.attNum }}
+        </td>
+        <td>
+            {{ l.oveNum }}
+        </td>
+        <td>
+            {{ l.vacNum }}
+        </td>
+        <td>
+            {{ l.leaNum }}
+        </td>
+    </tr>
+    {% endfor %}
+    </div>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="{% static 'novel/jquery/jquery-3.3.1.min.js' %}"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="{% static 'novel/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

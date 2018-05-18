@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>签到</title>
+    {% load static %}
+    <!-- Bootstrap -->
+    <link href="{% static 'novel/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+        }
+        #qrcode img {
+            margin:0 auto;
+        }
+        #discern {
+            margin-top:20px;
+            padding:6px 100px;
+            color: #fff;
+            border-radius: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static '/novel/css/header.css' %}">
+</head>
+
+<body>
+    <div class="header-mine">
+        <h2>签到</h2>
+    </div>
+    <div id="qrcode" style="margin: 0 auto; margin-top:110px;"></div>
+    <a href="/novel/index/common/signIn" id="discern" class="btn btn-default btn-primary">模拟识别</a>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="{% static 'novel/jquery/jquery-3.3.1.min.js' %}"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="{% static 'novel/bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--加载二维码js-->
+    <script src="{% static 'novel/js/qrcode.js' %}"></script>
+    <script>
+          function timerange() {
+              var mydate=new Date();
+              var myhours=mydate.getHours();
+              var myminutes=mydate.getMinutes();
+              var nowTime=myhours+':'+myminutes;
+
+              var beginTime="6:00";
+              var endTime="24:00";
+                  var strb = beginTime.split (":");
+
+              if (strb.length != 2) {
+                return false;
+              }
+
+              var stre = endTime.split (":");
+              if (stre.length != 2) {
+                return false;
+              }
+
+              var strn = nowTime.split (":");
+              if (stre.length != 2) {
+                return false;
+              }
+              var b = new Date ();
+              var e = new Date ();
+              var n = new Date ();
+
+              b.setHours (strb[0]);
+              b.setMinutes (strb[1]);
+              e.setHours (stre[0]);
+              e.setMinutes (stre[1]);
+              n.setHours (strn[0]);
+              n.setMinutes (strn[1]);
+
+              if (n.getTime () - b.getTime () > 0 && n.getTime () - e.getTime () < 0) {
+                return true;
+              } else {
+                alert ("当前时间是：" + n.getHours () + ":" + n.getMinutes () + "，不在该时间范围内！");
+                window.location.href=history.back(-1);
+                return false;
+              }
+        }
+        timerange();
+    </script>
+    <script>
+        var qrcode = new QRCode('qrcode', {
+          text: '/novel/index/common/signIn',
+          width: 256,
+          height: 256,
+          colorDark : '#000000',
+          colorLight : '#ffffff',
+          correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+.common-func,
+.sign {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.common-func h2,
+.sign h2 {
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.common-func .func-list {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 0 5px;
+}
+
+.func-list table.func-ta {
+    width: 100%;
+}
+
+.func-list table.func-ta td {
+    border: 1px solid #f7f7f7;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.func-ta td a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #666;
+    padding: 55px 0 15px;
+}
+
+.func-ta td a i {
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.func-ta td.check a i {
+    background-position: -37px -10px;
+}
+
+.func-ta td.check-stat a i {
+    background-position: -40px -40px;
+}
+
+.func-ta td.leave a i {
+    background-position: -40px -70px;
+}
+
+.func-ta td.check-ch a i {
+    background-position: -40px -100px;
+}
+
+.func-ta td.work a i {
+    background-position: -90px -10px;
+}
+
+.func-ta td.overtime a i {
+    background-position: -90px -40px;
+}
+
+.func-ta td.business a i {
+    background-position: -90px -70px;
+    left: 27px;
+}
+
+.func-ta td.add a i {
+    width: 25px;
+    height: 25px;
+    background-position: -90px -100px;
+    top: 30px;
+}
+
+.sign .sign-select {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 15px;
+}
+
+.sign-select>p {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+}
+
+.sign-select .sign-time {
+    float: left;
+}
+
+.sign-select .sign-label {
+    float: right;
+}
+
+.sign-label i {
+    width: 15px;
+    height: 12px;
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat -140px -10px;
+}
+
+.sign-select .sign-btn {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.sign-btn a {
+    display: inline-block;
+    width:145px;
+    padding: 10px 0;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.sign-btn a.signin,
+.sign-btn a.signout {
+    background-color: #0297d6;
+    margin:0 11px;
+}
+
+.sign-btn a.signinyet,
+.sign-btn a.signoutyet {
+    background-color: #63c9db;
+    margin:0 11px;
+}
+
+.sign-btn a span {
+    display: block;
+    color: #fff;
+}
+
+.sign-btn a span:first-of-type {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.sign-btn a span:last-of-type {
+    font-size: 12px;
+    margin-top: 2px;
+}
