@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32805e8-f726-4be5-8b0f-08dd742470b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/static/novel/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/leave.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/leave_check.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/overtime.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/sign_in.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/sign_out.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/stat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/vacate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/templates/novel/vacate_check.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/novel/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/attendance.iml" afterPath="$PROJECT_DIR$/.idea/attendance.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/myapp/settings.py" afterPath="$PROJECT_DIR$/myapp/myapp/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/myapp/urls.py" afterPath="$PROJECT_DIR$/myapp/myapp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/novel/admin.py" afterPath="$PROJECT_DIR$/myapp/novel/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/novel/models.py" afterPath="$PROJECT_DIR$/myapp/novel/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/novel/views.py" afterPath="$PROJECT_DIR$/myapp/novel/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -211,8 +193,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
-    <option name="y" value="11" />
+    <option name="x" value="42" />
+    <option name="y" value="1" />
     <option name="width" value="1938" />
     <option name="height" value="1102" />
   </component>
@@ -586,7 +568,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="11" width="1938" height="1102" extended-state="1" />
+    <frame x="42" y="1" width="1938" height="1102" extended-state="1" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21244635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
