@@ -131,19 +131,19 @@
     text-align: center;
 }
 .sign-btn a:first-of-type {
-    margin-left:14px;
+    margin-left:20px !important;
 }
 
 .sign-btn a.signin,
 .sign-btn a.signout {
     background-color: #0297d6;
-    margin:0 5px;
+    margin:0 15px;
 }
 
 .sign-btn a.signinyet,
 .sign-btn a.signoutyet {
     background-color: #63c9db;
-    margin:0 11px;
+    margin:0 15px;
 }
 
 .sign-btn a span {
