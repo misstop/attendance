@@ -130,6 +130,9 @@
     border-radius: 30px;
     text-align: center;
 }
+.sign-btn a:first-of-type {
+    margin-left:14px;
+}
 
 .sign-btn a.signin,
 .sign-btn a.signout {
